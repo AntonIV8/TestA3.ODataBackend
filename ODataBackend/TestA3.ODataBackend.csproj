@@ -216,6 +216,15 @@
     <Reference Include="../packages/NewPlatform.Flexberry.LogService.Objects.3.0.0/lib/net45/IIS.Caseberry.Logging.BusinessServers">
       <HintPath>../packages/NewPlatform.Flexberry.LogService.Objects.3.0.0/lib/net45/IIS.Caseberry.Logging.BusinessServers.dll</HintPath>
     </Reference>
+    <Reference Include="../packages/Microsoft.Web.Infrastructure.1.0.0.0/lib/net40/Microsoft.Web.Infrastructure">
+      <HintPath>../packages/Microsoft.Web.Infrastructure.1.0.0.0/lib/net40/Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/WebActivatorEx.2.2.0/lib/net40/WebActivatorEx">
+      <HintPath>../packages/WebActivatorEx.2.2.0/lib/net40/WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/Unity.AspNet.WebApi.5.0.13/lib/net45/Unity.AspNet.WebApi">
+      <HintPath>../packages/Unity.AspNet.WebApi.5.0.13/lib/net45/Unity.AspNet.WebApi.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties/AssemblyInfo.cs" />
@@ -232,6 +241,8 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="App_Start/UnityConfig.cs.pp" />
+    <Content Include="App_Start/UnityWebApiActivator.cs.pp" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
